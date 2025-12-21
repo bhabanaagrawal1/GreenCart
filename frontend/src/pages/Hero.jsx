@@ -6,6 +6,7 @@ import Choose from '../components/Choose'
 import Cards from '../components/Cards'
 import Footer from '../components/Footer'
 import HeroC from '../components/HeroC'
+import Navbar from '../components/Navbar'
 
 const Hero = () => {
   return (
@@ -21,6 +22,7 @@ const Hero = () => {
     font-family: "Edu NSW ACT Cursive", cursive;
 }`}
     </style>
+        <Navbar/>
         <HeroC/>
         <InfiniteScroll/>
         <Box/>

@@ -16,24 +16,17 @@ const Footer = () => {
       <style>
         {`
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-.styl{
-    padding: 7px 0;
-}
-.logo_i{
-    font-family: "Dancing Script", cursive;
-    margin: 0;
-}
-.par{
-    margin: 10px 0;
-}
+          .logo_i{
+              font-family: "Dancing Script", cursive;
+          }
         `}
       </style>
       <div className='w-full h-[80vh] bg-linear-to-bl from-green-100 via-lime-100 to-lime-50 overflow-hidden'>
         <div className='w-full h-[50%] flex justify-around items-center'>
           <div className='w-[30%] h-[90%] flex justify-center items-center'>
             <div className='w-[90%]'>
-              <h1 className='text-6xl  text-green-900 logo_i'>GreenCart</h1>
-              <h3 className='par text-[14px]'>Every product carries a little more care than expected, from our care to your table.</h3>
+              <h1 className='text-6xl  text-green-900 logo_i m-0'>GreenCart</h1>
+              <h3 className='my-2.5 text-[14px]'>Every product carries a little more care than expected, from our care to your table.</h3>
               <div className='flex justify-start gap-3'>
                 {icons.map((item,index) =>(
                    <NavLink key={index} to={links[index]}>
@@ -48,7 +41,7 @@ const Footer = () => {
             <div>
               <h1 className='text-[22px] text-green-900'>{item}</h1>
               {footer[index + 1].map((itm,idx)=>(
-                <h3 key={idx} className='text-[14px] styl text-black-600 hover:cursor-pointer hover:scale-102 hover:text-lime-900 hover:font-semibold hover:underline hover:underline-offset-2'>{itm}</h3>
+                <h3 key={idx} className='text-[14px] p-1.75 text-black-600 hover:cursor-pointer hover:scale-102 hover:text-lime-900 hover:font-semibold hover:underline hover:underline-offset-2'>{itm}</h3>
               ))}
             </div>
           </div>

@@ -8,18 +8,11 @@ const Navbar = () => {
 
 .logo{
     font-family: "Dancing Script", cursive;
-    margin-left: 30px;
 }
-.login{
-    margin-right: 30px;
-    padding: 3px 25px;
-    border: 1px solid black;
-    border-radius: 10px;
-    
-}`}
+`}
     </style>
     <div className='w-full fixed h-[10vh] bg-white flex justify-between items-center border-b border-gray-300 z-999'>
-      <div className='logo font-extrabold text-[30px]'>GreenCart</div>
+      <div className='font-extrabold text-[30px] logo ml-7.5'>GreenCart</div>
       <div className='flex items-center gap-7'>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/product'>All Products</NavLink>
@@ -33,7 +26,7 @@ const Navbar = () => {
                 <path d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </NavLink>
-        <NavLink to='/signup' className='login'>Sign Up</NavLink>
+        <NavLink to='/signup' className='mr-7.5 px-6.25 py-0.75 border-black border rounded-[10px]'>Sign Up</NavLink>
       </div>
     </div>
     <div className='w-full h-[10vh]'></div>

@@ -3,34 +3,11 @@ import React from 'react'
 const Cards = () => {
   return (
     <div>
-        <style>
-        {`
-          .tp{
-    margin: 15px;
-}
-.head{
-    padding: 30px;
-}
-.givePadding{
-    padding: 10px;
-}
-.giveMargin{
-    margin: 5px;
-}
-    .btns{
-    padding: 7px 100px;
-    background: #000;
-    color: white;
-    cursor: pointer;
-    border-radius: 10px;
-}
-        `}
-      </style>
       <div className='w-full h-[130vh]'>
         <div className='w-full h-[30%] flex justify-center items-center'>
-            <div className='head'>
+            <div className='p-7.5'>
                 <h1 className='text-6xl text-center'>Get Product with <span className=' text-lime-600'>Cheap Price</span></h1>
-            <p className='text-center tp'>Get high-quality products at fair prices, carefully selected to fit your everyday needs.</p>
+            <p className='text-center m-3.75'>Get high-quality products at fair prices, carefully selected to fit your everyday needs.</p>
             </div>
         </div>
         <div className='w-full h-[70%] flex justify-around items-center'>
@@ -41,12 +18,12 @@ const Cards = () => {
                                 <img src="https://i.pinimg.com/736x/25/59/ab/2559ab2b9bf225ab864fba267c77221b.jpg" alt="" className='w-full h-full object-cover'/>
                             </div>
                         </div>
-                        <div className='w-full h-[38%] givePadding flex justify-center items-center'>
+                        <div className='w-full h-[38%] p-2.5 flex justify-center items-center'>
                             <div>
                                 <h2 className='text-3xl text-center font-bold font-serif text-lime-600'>Fresh Vegetable</h2>
                             <div className='flex justify-center items-baseline text-center'><h1 className='text-7xl'>25%</h1><h2 className='text-2xl text-lime-600'>OFF</h2></div>
-                            <p className='text-center giveMargin text-[14px]'>Quality that speaks</p>
-                            <button className='text-center btns hover:scale-102 hover:opacity-80'>Buy Now</button>
+                            <p className='text-center m-1.25 text-[14px]'>Quality that speaks</p>
+                            <button className='flex items-center text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -58,12 +35,12 @@ const Cards = () => {
                                 <img src="https://i.pinimg.com/736x/36/78/f1/3678f1eb815bd34ce44345db09fa6805.jpg" alt="" className='w-full h-full object-cover' />
                             </div>
                         </div>
-                        <div className='w-full h-[38%] givePadding flex justify-center items-center'>
+                        <div className='w-full h-[38%] p-2.5 flex justify-center items-center'>
                             <div>
                                 <h2 className='text-3xl text-center font-bold font-serif text-lime-600'>Handpicked Fruits</h2>
                             <div className='flex justify-center items-baseline text-center'><h1 className='text-7xl'>35%</h1><h2 className='text-2xl text-lime-600'>OFF</h2></div>
-                            <p className='text-center giveMargin text-[14px]'>Only the good stuff</p>
-                            <button className='text-center btns hover:scale-102 hover:opacity-80'>Buy Now</button>
+                            <p className='text-center m-1.25 text-[14px]'>Only the good stuff</p>
+                            <button className='text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -76,12 +53,12 @@ const Cards = () => {
 
                             </div>
                         </div>
-                        <div className='w-full h-[38%] givePadding flex justify-center items-center'>
+                        <div className='w-full h-[38%] p-2.5 flex justify-center items-center'>
                             <div>
                                 <h2 className='text-3xl text-center font-bold font-serif text-lime-600'>Natural Dairy</h2>
                             <div className='flex justify-center items-baseline text-center'><h1 className='text-7xl'>20%</h1><h2 className='text-2xl text-lime-600'>OFF</h2></div>
-                            <p className='text-center giveMargin text-[14px]'>Checked. Trusted. Reliable.</p>
-                            <button className='text-center btns hover:scale-102 hover:opacity-80'>Buy Now</button>
+                            <p className='text-center m-1.25 text-[14px]'>Checked. Trusted. Reliable.</p>
+                            <button className='text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</button>
                             </div>
                         </div>
                     </div>

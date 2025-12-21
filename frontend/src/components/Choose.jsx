@@ -66,32 +66,15 @@ const Choose = () => {
   ]
   return (
     <div>
-      <style>
-        {`
-          .setImg{
-    max-width: 190px;
-    height: 30%;
-    border-radius: 10px;
-    margin-bottom: 4px;
-    box-shadow: 5px 5px 10px #00000010;
-    object-fit: cover;
-}
-.htext{
-    margin: 15px;
-    padding-bottom: 7px;
-}
-
-        `}
-      </style>
       <div className='w-full h-[110vh] flex justify-center items-center'>
         <div className='w-[80%] h-[80%] flex justify-around items-center'>
             <div className='w-[47%] h-[90%] bg-gray-100 rounded-2xl shadow-md flex justify-center items-center'>
               <div className='w-[90%] h-[90%] flex justify-center items-center'>
                <div>
-                 <h1 className='text-5xl htext'>Why Choose Us</h1>
-              <p className='htext'>Behind every meal is a story—of care, effort, and intention. We focus on thoughtful choices so you don’t have to second-guess what you bring into your home. Freshness, trust, and simplicity guide everything we do.</p>
+                 <h1 className='text-5xl m-3.75 pb-1.75'>Why Choose Us</h1>
+              <p className='m-3.75 pb-1.75'>Behind every meal is a story—of care, effort, and intention. We focus on thoughtful choices so you don’t have to second-guess what you bring into your home. Freshness, trust, and simplicity guide everything we do.</p>
               {questions.map((item,index) => (
-                <div key={index} className='flex justify-between items-center htext border-b border-gray-300'><p>{item}</p>
+                <div key={index} className='flex justify-between items-center m-3.75 pb-1.75 border-b border-gray-300'><p>{item}</p>
                 <button><i class="ri-add-fill"></i></button></div>
               ))}
                </div>
@@ -99,7 +82,7 @@ const Choose = () => {
             </div>
             <div className='w-[47%] h-[90%] object-cover bg-center bg-cover rounded-2xl shadow-md flex justify-around flex-wrap overflow-hidden p-2 columns-4xs gap-2;'>
               {images.map((item,index)=>(
-                <img key={index} src={item.link} alt="" className={`setImg ${item.aspectRatio} ${item.position}`}/>
+                <img key={index} src={item.link} alt="" className={`max-w-47.5 h-[30%] rounded-[10px] mb-1 shadow-sm object-cover ${item.aspectRatio} ${item.position}`}/>
               ))}
             </div>
         </div>
