@@ -24,7 +24,7 @@ const InfiniteScroll = () => {
 }
       `}
     </style>
-    <div className="mt-3 mb-10 w-full">
+    <div className="mt-0 mb-10 w-full">
       <div className={className+"_movingText flex flex-row overflow-auto"}>
         <h1 className="text-9xl whitespace-nowrap">
           Curated groceries for your everyday life.&nbsp;
