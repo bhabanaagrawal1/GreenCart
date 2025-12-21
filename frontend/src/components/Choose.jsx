@@ -1,5 +1,4 @@
 import React from 'react'
-import './Choose.css'
 
 const Choose = () => {
   const questions = ["Why we keep it simple","The care behind each product","Food, done thoughtfully","Because everyday matters"]
@@ -67,6 +66,23 @@ const Choose = () => {
   ]
   return (
     <div>
+      <style>
+        {`
+          .setImg{
+    max-width: 190px;
+    height: 30%;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    box-shadow: 5px 5px 10px #00000010;
+    object-fit: cover;
+}
+.htext{
+    margin: 15px;
+    padding-bottom: 7px;
+}
+
+        `}
+      </style>
       <div className='w-full h-[110vh] flex justify-center items-center'>
         <div className='w-[80%] h-[80%] flex justify-around items-center'>
             <div className='w-[47%] h-[90%] bg-gray-100 rounded-2xl shadow-md flex justify-center items-center'>

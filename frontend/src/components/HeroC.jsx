@@ -1,5 +1,4 @@
 import React from 'react'
-import './HeroC.css'
 
 const HeroC = () => {
     const data = [
@@ -24,6 +23,15 @@ const HeroC = () => {
     ]
   return (
     <div>
+        <style>{`.headings{
+    padding: 100px 0 20px;
+}
+.change{
+    padding: 50px;
+}
+._big{
+    padding: 30px;
+}`}</style>
        <h1 className="text-9xl font-semibold text-center mx-auto headings">Best of the week</h1>
             <div className='w-full text-center flex justify-center items-center'>
                 <p className="w-[50%] text-[16px] text-gray-500">Everyday groceries selected with intention, helping you nourish moments that bring comfort, balance, and connection.</p>

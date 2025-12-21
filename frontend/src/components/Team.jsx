@@ -1,9 +1,30 @@
 import React from 'react'
-import './Team.css'
 
 const Team = () => {
   return (
     <div>
+        <style>
+            {`.team{
+    /* margin-top: 70px; */
+    margin-bottom: 10px;
+}
+.join{
+    margin: 30px;
+}
+.set{
+    margin-top: 0;
+}
+.btn{
+    padding: 10px 22px;
+    border-radius: 10px;
+}
+.r{
+    margin-bottom: 0;
+}
+.short{
+    margin-left: 30px;
+}`}
+        </style>
         <div className='w-full h-auto'>
             <h1 className='text-6xl text-center team'>Become A Part Of <span className='text-green-800'>Our Team</span></h1>
             <p className='text-center'>Help us build a smarter, fresher way to shop for everyday groceries.</p>

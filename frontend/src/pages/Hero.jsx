@@ -1,5 +1,4 @@
 import React from 'react'
-import './Hero.css'
 import InfiniteScroll from '../components/InfiniteScroll'
 import Box from '../components/Box'
 import Team from '../components/Team'
@@ -11,6 +10,17 @@ import HeroC from '../components/HeroC'
 const Hero = () => {
   return (
     <>
+    <style>
+      {`@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+.heading{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.baseline{
+    margin-right: 20px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+}`}
+    </style>
         <HeroC/>
         <InfiniteScroll/>
         <Box/>

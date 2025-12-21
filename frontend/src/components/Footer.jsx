@@ -1,5 +1,4 @@
 import React from 'react'
-import './Footer.css'
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -14,6 +13,21 @@ const Footer = () => {
   };
   return (
     <div>
+      <style>
+        {`
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.styl{
+    padding: 7px 0;
+}
+.logo_i{
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+}
+.par{
+    margin: 10px 0;
+}
+        `}
+      </style>
       <div className='w-full h-[80vh] bg-linear-to-bl from-green-100 via-lime-100 to-lime-50 overflow-hidden'>
         <div className='w-full h-[50%] flex justify-around items-center'>
           <div className='w-[30%] h-[90%] flex justify-center items-center'>

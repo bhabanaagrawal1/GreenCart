@@ -1,9 +1,23 @@
 import { NavLink } from 'react-router-dom';
-import './Navbar.css';
 import 'remixicon/fonts/remixicon.css'
 const Navbar = () => {
   return (
     <>
+    <style>
+      {`@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.logo{
+    font-family: "Dancing Script", cursive;
+    margin-left: 30px;
+}
+.login{
+    margin-right: 30px;
+    padding: 3px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}`}
+    </style>
     <div className='w-full fixed h-[10vh] bg-white flex justify-between items-center border-b border-gray-300 z-999'>
       <div className='logo font-extrabold text-[30px]'>GreenCart</div>
       <div className='flex items-center gap-7'>
