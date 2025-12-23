@@ -46,7 +46,7 @@ const ServeB = () => {
       },
       {
         pic: "https://i.pinimg.com/1200x/4a/4f/bd/4a4fbd994de19d9203fdbcf7c38daad3.jpg",
-        h: "Neha R. — Homemaker",
+        h: "Shakshi M. — Homemaker",
         txt: "From easy navigation to quick checkout and on-time delivery, everything about this grocery shopping experience feels smooth, reliable, and perfectly designed for busy households."
       },
       {
@@ -139,10 +139,10 @@ const ServeB = () => {
             <img src={item.pic}
                 alt="" className="w-full h-60 object-cover"
             />
-            <h3 className="mt-3 px-4 pt-3 mb-1 font-semibold text-gray-800">
+            <h3 className="mt-3 px-4 pt-3 mb-1 font-semibold text-black">
                 {item.h}
             </h3>
-            <p className="text-sm px-4 pb-2 text-gray-600 w-5/6 line-clamp-6">
+            <p className="text-sm px-4 pb-2 text-gray-700 w-5/6 line-clamp-6">
                 {item.txt}
             </p>
         </div>
