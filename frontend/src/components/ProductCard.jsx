@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-    <div className="border border-gray-700/20 rounded-md px-3 py-2 bg-white w-56 ">
+    <div className="shadow-lg rounded-md px-3 py-2 bg-white w-56 ">
       <div className="group cursor-pointer flex items-center justify-center">
         <img
           className="group-hover:scale-105 transition max-w-36"

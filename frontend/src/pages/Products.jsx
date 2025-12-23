@@ -48,14 +48,14 @@ const Products = () => {
 
       {/* designing the search box */}
       <div className="px-6 pt-16 pb-4">
-  <div className="relative w-full max-w-md">
+  <div className="relative w-full max-w-md shadow-lg rounded-full">
     <i className="ri-search-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg"></i>
     <input
       type="text"
       placeholder="Search groceries..."
       value={search}
       onChange={(e) => setSearch(e.target.value)}
-      className="w-full pl-12 pr-4 py-2 border rounded-full outline-none border-gray-300"
+      className="w-full pl-12 pr-4 py-2 rounded-full outline-none "
     />
   </div>
 </div>
@@ -68,11 +68,11 @@ const Products = () => {
           <button
             key={item}
             onClick={() => setCategory(item)}
-            className={`px-6 py-2 rounded-full capitalize border transition
+            className={`px-6 py-2 rounded-full capitalize transition shadow-lg
               ${
                 category === item
-                  ? "bg-black text-white border"
-                  : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+                  ? "bg-black text-white"
+                  : "bg-white text-gray-700 hover:bg-gray-100"
               }`}
           >
             {item}
