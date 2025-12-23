@@ -40,7 +40,7 @@ const Products = () => {
   return (
     <>
       <Navbar />
-<div className="flex justify-between">
+<div className="flex justify-between items-center">
   
       <h1 className="px-6 pt-16 pb-4 text-5xl font-semibold">
         Products
