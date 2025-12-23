@@ -48,7 +48,7 @@ const Products = () => {
 
       {/* designing the search box */}
       <div className="px-6 pt-16 pb-4">
-  <div className="relative w-full max-w-md shadow-lg rounded-full">
+  <div className="relative w-full max-w-md shadow-sm rounded-full">
     <i className="ri-search-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg"></i>
     <input
       type="text"
@@ -68,7 +68,7 @@ const Products = () => {
           <button
             key={item}
             onClick={() => setCategory(item)}
-            className={`px-6 py-2 rounded-full capitalize transition shadow-lg
+            className={`px-6 py-2 rounded-full capitalize transition shadow-sm
               ${
                 category === item
                   ? "bg-black text-white"
