@@ -83,10 +83,10 @@ const ServeB = () => {
         <h1 className='text-7xl text-center p-15'>Featured & Recognized By</h1>
         <div className='flex justify-center items-center'>
             <div className='w-[80%] px-5 py-10 shadow-lg rounded-2xl mb-10 flex justify-around items-center gap-7 text-4xl text-white bg-black flex-nowrap'>
-            <h1>Product Hunt</h1>
-            <h1>Google Startup</h1>
-            <h1>Y Combinator</h1>
-            <h1>TechCrunch</h1>
+            <h1>DailyBasket</h1>
+            <h1>Farm2Home</h1>
+            <h1>UrbanGrocers</h1>
+            <h1>GreenMart Labs</h1>
         </div>
         </div>
         <div className='w-full h-110 flex justify-around items-center'>
