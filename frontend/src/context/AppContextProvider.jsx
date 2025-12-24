@@ -16,30 +16,34 @@ const AppContextProvider = ({ children }) => {
 
 
   const addToCart = (itemId) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [itemId]: (prev[itemId] || 0) + 1,
-    }));
+    setCartItems((prev) => {
+       return {...prev,[itemId]: (prev[itemId] || 0) + 1};
+    })
     toast.success("Added to cart");
   };
 
   const removeFromCart = (itemId) => {
     setCartItems((prev) => {
-      if (!prev[itemId]) return prev;
-      const updated = { ...prev };
-      updated[itemId] -= 1;
-      if (updated[itemId] === 0) delete updated[itemId];
-      return updated;
-    });
+        const updated = {...prev};
+        if(!prev[itemId]) return updated;
+        if(prev[itemId] === 1){
+            delete updated[itemId];
+            return updated;
+        }
+        updated[itemId] -= 1;
+        return updated;
+    })
     toast.success("Removed from cart");
   };
 
-  const updateCartItem = (itemId, quantity) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [itemId]: quantity,
-    }));
-  };
+  //no need because this would have been useful when the user can change the quantity directly by writing inside the input box not by + or -
+  //but yeh concept bhi ana chahiye
+//   const updateCartItem = (itemId, quantity) => {
+//     setCartItems((prev) => ({
+//       ...prev,
+//       [itemId]: quantity,
+//     }));
+//   };
 
   const value = {
     navigate,
@@ -55,7 +59,7 @@ const AppContextProvider = ({ children }) => {
     setSearchQuery,
     addToCart,
     removeFromCart,
-    updateCartItem,
+    // updateCartItem,
   };
 
   return (

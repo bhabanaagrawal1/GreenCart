@@ -2,11 +2,11 @@ import { assets } from "../assets/assets";
 import { useAppContext } from "../context/AppContext";
 
 const ProductCard = ({ product }) => {
-  const { currency, addToCart, removeFromCart, cartItems } = useAppContext();
+  const { currency, addToCart, removeFromCart, cartItems,navigate } = useAppContext();
 
   return (
     <>
-    <div className="shadow-sm rounded-md px-3 py-2 bg-white w-56 ">
+    <div className="shadow-sm rounded-md px-3 py-2 bg-white w-56 " onClick={()=>{navigate(`/product/${product.category.toLowerCase()}/${product._id}`);scrollTo(0,0)}}>
       <div className="group cursor-pointer flex items-center justify-center">
         <img
           className="group-hover:scale-105 transition max-w-36"

@@ -7,6 +7,7 @@ import Ordered from './pages/Ordered'
 import Signup from './pages/Signup'
 import Favorite from './pages/Favorite'
 import { Toaster } from "react-hot-toast"
+import ProductDetail from './pages/ProductDetail'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/' element={<Signup/>}/>
         <Route path='/home' element={<Hero/>}/>
         <Route path='/product' element={<Products/>}/>
+        <Route path='/product/:category/:id' element={<ProductDetail/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/serve' element={<Serve/>}/>
         <Route path='/ordered' element={<Ordered/>}/>

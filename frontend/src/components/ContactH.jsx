@@ -73,7 +73,7 @@ const ContactH = () => {
   ))}
             </div>
            <p className='w-[75%] text-6xl/18 line-clamp-5 pt-10 pb-7 duration-100 ease-out text-center'>We believe great meals begin with great ingredients, <span className='text-gray-500'>and our purpose is to deliver uncompromising freshness and quality to every home we serve.</span></p>
-           <div className='w-[85%] h-150 rounded-2xl shadow-lg mb-5  flex justify-around items-center'>
+           <div className='w-[85%] h-150 rounded-2xl shadow-lg mb-5  flex justify-around items-center border border-gray-200'>
             <div className='w-[50%] h-130'>
                 <div className='m-auto'>
                     <h1 className='text-4xl p-5 pb-3'>Send us a message</h1>

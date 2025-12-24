@@ -3,39 +3,39 @@ import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 import { useAppContext } from "../context/AppContext";
 import FooterC from "../components/FooterC";
+import { useSearchParams } from "react-router-dom";
 
 const CATEGORIES = ["all", "vegetables", "fruits", "dairy", "others"];
 const OTHER_CATEGORIES = ["drinks", "bakery", "instant", "grains"];
 
 const Products = () => {
+  const [searchParams,setSearchParams] = useSearchParams();
   const { products } = useAppContext();
-  const [category, setCategory] = useState("all");
+  const category = searchParams.get("category") || "all";
   const [search, setSearch] = useState("");
 
   const filteredProducts = useMemo(() => {
-    let result = [...products];
+  let result = [...products];
 
-    //adding the searching filter
-    if (search.trim()) {
-      result = result.filter((product) =>
-        product.name.toLowerCase().includes(search.toLowerCase())
-      );
-    }
+  if (search.trim()) {
+    result = result.filter((product) =>
+      product.name.toLowerCase().includes(search.toLowerCase())
+    );
+  }
 
-    //adding the category filter
-    if (category === "others") {
-      result = result.filter((product) =>
-        OTHER_CATEGORIES.includes(product.category.toLowerCase())
-      );
-    } else if (category !== "all") {
-      result = result.filter(
-        (product) => product.category.toLowerCase() === category
-      );
-    }
+  if (category === "others") {
+    result = result.filter((product) =>
+      OTHER_CATEGORIES.includes(product.category.toLowerCase())
+    );
+  } else if (category !== "all") {
+    result = result.filter(
+      (product) => product.category.toLowerCase() === category
+    );
+  }
 
-    //the produts in stock
-    return result.filter((product) => product.inStock);
-  }, [products, search, category]);
+  return result.filter((product) => product.inStock);
+}, [products, search, category]);
+
 
   return (
     <>
@@ -67,7 +67,11 @@ const Products = () => {
         {CATEGORIES.map((item) => (
           <button
             key={item}
-            onClick={() => setCategory(item)}
+            onClick={() =>
+    setSearchParams(
+      item === "all" ? {} : { category: item }
+    )
+  }
             className={`px-6 py-2 rounded-full capitalize transition shadow-sm
               ${
                 category === item

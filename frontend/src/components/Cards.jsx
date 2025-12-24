@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Cards = () => {
   return (
@@ -23,7 +24,7 @@ const Cards = () => {
                                 <h2 className='text-3xl text-center font-bold font-serif text-lime-600'>Fresh Vegetable</h2>
                             <div className='flex justify-center items-baseline text-center'><h1 className='text-7xl'>25%</h1><h2 className='text-2xl text-lime-600'>OFF</h2></div>
                             <p className='text-center m-1.25 text-[14px]'>Quality that speaks</p>
-                            <button className='flex items-center text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</button>
+                            <NavLink to="/product?category=vegetables" className='flex items-center text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</NavLink>
                             </div>
                         </div>
                     </div>
@@ -40,7 +41,7 @@ const Cards = () => {
                                 <h2 className='text-3xl text-center font-bold font-serif text-lime-600'>Handpicked Fruits</h2>
                             <div className='flex justify-center items-baseline text-center'><h1 className='text-7xl'>35%</h1><h2 className='text-2xl text-lime-600'>OFF</h2></div>
                             <p className='text-center m-1.25 text-[14px]'>Only the good stuff</p>
-                            <button className='text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</button>
+                            <NavLink to="/product?category=fruits" className='text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</NavLink>
                             </div>
                         </div>
                     </div>
@@ -58,7 +59,7 @@ const Cards = () => {
                                 <h2 className='text-3xl text-center font-bold font-serif text-lime-600'>Natural Dairy</h2>
                             <div className='flex justify-center items-baseline text-center'><h1 className='text-7xl'>20%</h1><h2 className='text-2xl text-lime-600'>OFF</h2></div>
                             <p className='text-center m-1.25 text-[14px]'>Checked. Trusted. Reliable.</p>
-                            <button className='text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</button>
+                            <NavLink to="/product?category=dairy" className='text-center py-1.75 px-25 bg-black text-white hover:cursor-pointer rounded-[10px] hover:scale-102 hover:opacity-80'>Buy Now</NavLink>
                             </div>
                         </div>
                     </div>

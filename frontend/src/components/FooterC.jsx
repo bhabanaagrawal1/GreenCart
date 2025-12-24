@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 const FooterC = () => {
-  const icons = [<i class="ri-linkedin-box-fill"></i>,<i class="ri-twitter-x-line"></i>,<i class="ri-instagram-fill"></i>,<i class="ri-youtube-fill"></i>]
+  const icons = [<i className="ri-linkedin-box-fill"></i>,<i className="ri-twitter-x-line"></i>,<i className="ri-instagram-fill"></i>,<i className="ri-youtube-fill"></i>]
   const links = ["https://www.linkedin.com/in/bhabana-agrawal-6a6313358/","https://x.com/AgrawalBha9","https://www.instagram.com/","https://www.youtube.com/"]
   const heading = ["About","Company","Support","Get in Touch"]
   const footer = {
