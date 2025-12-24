@@ -11,20 +11,20 @@ const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // 🔹 Product (derived)
+  //Product (derived)
   const product = useMemo(
     () => products?.find(item => item._id === id),
     [products, id]
   );
 
-  // 🔹 User-selected image ONLY
+  //User-selected image ONLY
   const [activeImage, setActiveImage] = useState(null);
 
-  // 🔹 Default image (derived, no state, no effect)
+  //Default image (derived, no state, no effect)
   const defaultImage = product?.image?.[0] || null;
   const displayImage = activeImage ?? defaultImage;
 
-  // 🔹 Related products (derived, used → no warning)
+  //Related products (derived, used → no warning)
   const related = useMemo(() => {
     if (!product || products.length === 0) return [];
 
@@ -37,7 +37,7 @@ const ProductDetail = () => {
       .slice(0, 5);
   }, [products, product]);
 
-  // 🔹 Invalid product guard (side-effect → allowed)
+  //Invalid product guard (side-effect → allowed)
   useEffect(() => {
     if (products.length > 0 && !product) {
       navigate("/404");
@@ -171,7 +171,7 @@ const ProductDetail = () => {
             ))}
         </div>
         <div onClick={()=> {navigate('/product');scroll(0,0)}} className=" flex justify-center items-center mb-10">
-            <button className="px-9 py-3 bg-black text-white">See more</button>
+            <button className="px-15 py-2 bg-black text-white">See more</button>
         </div>
       </div>
 
