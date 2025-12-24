@@ -49,7 +49,7 @@ const Products = () => {
       {/* designing the search box */}
       <div className="px-6 pt-16 pb-4">
   <div className="relative w-full max-w-md shadow-sm rounded-full">
-    <i className="ri-search-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg"></i>
+    <i className="ri-search-line absolute left-4 top-1/2 -translate-y-1/2 text-lg"></i>
     <input
       type="text"
       placeholder="Search groceries..."
@@ -72,7 +72,7 @@ const Products = () => {
               ${
                 category === item
                   ? "bg-black text-white"
-                  : "bg-white text-gray-700 hover:bg-gray-100"
+                  : "bg-white hover:bg-gray-100"
               }`}
           >
             {item}

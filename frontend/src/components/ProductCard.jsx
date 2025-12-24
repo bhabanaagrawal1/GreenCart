@@ -15,10 +15,10 @@ const ProductCard = ({ product }) => {
         />
       </div>
 
-      <div className="text-sm text-gray-500">
+      <div className="text-sm">
         <p>{product.category}</p>
 
-        <p className="text-gray-700 font-medium text-lg truncate">
+        <p className=" font-medium text-lg truncate">
           {product.name}
         </p>
 
