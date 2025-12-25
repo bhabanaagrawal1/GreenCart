@@ -6,8 +6,8 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-    <div className="shadow-sm rounded-md px-3 py-2 bg-white w-56 " onClick={()=>{navigate(`/product/${product.category.toLowerCase()}/${product._id}`);scrollTo(0,0)}}>
-      <div className="group cursor-pointer flex items-center justify-center">
+    <div className="shadow-sm rounded-md px-3 py-2 bg-white w-56 ">
+      <div className="group cursor-pointer flex items-center justify-center"  onClick={()=>{navigate(`/product/${product.category.toLowerCase()}/${product._id}`);scrollTo(0,0)}}>
         <img
           className="group-hover:scale-105 transition max-w-36"
           src={product.image[0]}

@@ -77,7 +77,7 @@ const ServeB = () => {
             </div>
             </div>
         </div>
-        <div className='w-[45%] h-full bg-[url("https://i.pinimg.com/736x/58/41/43/5841436224d9c1371bb3f920352ec8e9.jpg")] bg-cover bg-right bg-no-repeat'></div>
+        <div className='w-[45%] h-full bg-[url("https://i.pinimg.com/1200x/d8/1a/8f/d81a8fa5ce95d5c25445a770b80140ab.jpg")] bg-cover bg-top-right bg-no-repeat'></div>
       </div>
       <div>
         <h1 className='text-7xl text-center p-15'>Featured & Recognized By</h1>
@@ -91,7 +91,7 @@ const ServeB = () => {
         </div>
         <div className='w-full h-110 flex justify-around items-center'>
     {trying.map((item,index) => (
-   <div className='h-100 flex flex-col justify-center  aspect-square shadow-lg rounded-2xl'>
+   <div className='h-100 flex flex-col justify-center  aspect-square shadow-lg rounded-2xl border border-gray-100'>
             <div key={index} className="h-60 aspect-square flex items-center justify-center overflow-hidden">
   <div
   style={{ backgroundImage: `url(${item.link})` }}

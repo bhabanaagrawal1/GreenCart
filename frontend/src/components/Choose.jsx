@@ -1,7 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Choose = () => {
-  const questions = ["Why we keep it simple","The care behind each product","Food, done thoughtfully","Because everyday matters"]
+  const [selected,setSeleted] = useState(null);
+  const faqData = [
+  {
+    id: 1,
+    question: "Why we keep it simple",
+    answer: "To focus on what matters.",
+  },
+  {
+    id: 2,
+    question: "The care behind each product",
+    answer: "Crafted with honesty and attention.",
+  },
+  {
+    id: 3,
+    question: "Food, done thoughtfully",
+    answer: "Made with purpose, not shortcuts.",
+  },
+  {
+    id: 4,
+    question: "Because everyday matters",
+    answer: "Small choices shape better days.",
+  },
+];
+
   const images = [
     {
       link: "https://i.pinimg.com/1200x/b1/06/e9/b106e9cdd6b34abbcfef1bbf85d1467f.jpg",
@@ -72,10 +95,18 @@ const Choose = () => {
               <div className='w-[90%] h-[90%] flex justify-center items-center'>
                <div>
                  <h1 className='text-5xl m-3.75 pb-1.75'>Why Choose Us</h1>
-              <p className='m-3.75 pb-1.75'>Behind every meal is a story—of care, effort, and intention. We focus on thoughtful choices so you don’t have to second-guess what you bring into your home. Freshness, trust, and simplicity guide everything we do.</p>
-              {questions.map((item,index) => (
-                <div key={index} className='flex justify-between items-center m-3.75 pb-1.75 border-b border-gray-300'><p>{item}</p>
-                <button><i class="ri-add-fill"></i></button></div>
+              <p className='m-3.5 pb-1 mb-0'>Behind every meal is a story—of care, effort, and intention. We focus on thoughtful choices so you don’t have to second-guess what you bring into your home. Freshness, trust, and simplicity guide everything we do.</p>
+              {faqData.map((item,index) => (
+                <div key={index} className='flex flex-col'>
+                  <div  className='flex justify-between items-center m-3.5 pb-1.75 border-b border-gray-300'>
+                    <p>{item.question}</p>
+                    <button onClick={()=>{setSeleted(item.id === selected ? null : item.id);}}><i class="ri-add-fill"></i></button>
+                  </div>
+                {selected === item.id ?
+                    <div className='bg-white p-3 rounded-[10px]'>{item.answer}</div>
+                :null
+                }
+                </div>
               ))}
                </div>
               </div>

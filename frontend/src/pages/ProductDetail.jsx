@@ -148,7 +148,7 @@ const ProductDetail = () => {
                   addToCart(product._id);
                   navigate("/ordered");
                 }}
-                className="w-full py-3.5 font-medium bg-black text-white hover:opacity-90 transition"
+                className="w-full py-3.5 font-medium bg-black text-white hover:opacity-70 transition"
               >
                 Buy Now
               </button>
@@ -170,8 +170,8 @@ const ProductDetail = () => {
                 <ProductCard key = {index} product={product}/>
             ))}
         </div>
-        <div onClick={()=> {navigate('/product');scroll(0,0)}} className=" flex justify-center items-center mb-10">
-            <button className="px-15 py-2 bg-black text-white">See more</button>
+        <div onClick={()=> {navigate('/product');scrollTo(0,0)}} className=" flex justify-center items-center mb-10">
+            <button className="px-15 py-2 bg-black text-white hover:opacity-70">See more</button>
         </div>
       </div>
 

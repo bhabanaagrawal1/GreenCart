@@ -45,6 +45,34 @@ const AppContextProvider = ({ children }) => {
 //     }));
 //   };
 
+  //get cart item count
+  const getCartCount = () => {
+    let totalCount = 0;
+    for(const item in cartItems){
+      totalCount += cartItems[item]
+    }
+    return totalCount;
+  }
+
+  //get cart total amount
+const getCartAmount = () => {
+  let totalAmount = 0;
+
+  for (const itemId in cartItems) {
+    const itemInfo = products.find(
+      product => product._id === Number(itemId)
+    );
+
+    if (itemInfo && cartItems[itemId] > 0) {
+      totalAmount += itemInfo.offerPrice * cartItems[itemId];
+    }
+  }
+
+  return Math.floor(totalAmount * 100) / 100;
+};
+
+
+
   const value = {
     navigate,
     currency,
@@ -59,6 +87,8 @@ const AppContextProvider = ({ children }) => {
     setSearchQuery,
     addToCart,
     removeFromCart,
+    getCartCount,
+    getCartAmount,
     // updateCartItem,
   };
 
